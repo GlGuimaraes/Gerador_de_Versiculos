@@ -3,43 +3,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/purple"
     android:layout_height="match_parent"
+    android:background="@color/background_telaInicial"
     android:padding="32dp"
     tools:context=".ui.telaInicial">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vamos começar?"
-        android:textColor="@color/white"
-        android:textSize="30sp"
-        android:layout_marginTop="64dp"
-        android:fontFamily="@font/cabin"
-        android:layout_centerHorizontal="true"/>
-    <EditText
+    <ImageView
         android:layout_width="match_parent"
-        android:gravity="center"
-        android:layout_height="wrap_content"
-        android:hint="@string/your_name"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="@font/cabin"
-        android:layout_centerVertical="true"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
+        android:layout_height="300dp"
+        android:alpha="0.7"
+        android:src="@drawable/cover" />
+
+    <EditText
         android:id="@+id/edit_name"
-        android:textSize="22sp"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/cabin"
+        android:gravity="center"
+        android:hint="@string/your_name"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="22sp" />
 
     <Button
+        android:id="@+id/button_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/save"
-        android:id="@+id/button_save"
+        android:layout_below="@id/edit_name"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/pink"
         android:paddingStart="32dp"
         android:paddingEnd="32dp"
-        android:layout_alignParentBottom="true"
-        android:backgroundTint="@color/light_purple"
-        android:layout_marginBottom="16dp"/>
+        android:text="@string/save" />
 
 </RelativeLayout>

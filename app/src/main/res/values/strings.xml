@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Motivation</string>
+    <string name="app_name">Gerador de Versículos</string>
     <string name="new_phrase">NOVA FRASE</string>
     <string name="your_name">Qual seu nome?</string>
     <string name="user">Usuário</string>
@@ -11,4 +11,7 @@
     <string name="phrases_morning">Frases para manhã</string>
 
     <string name="validation_mandatory_name">Informe seu nome.</string>
+    <string name="new_verse">Novo Versículo</string>
+    <string name="VerseTypeFortification">Aqui está um versículo de Fortalecimento:</string>
+    <string name="helloName">Olá, Guilherme!</string>
 </resources>

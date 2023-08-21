@@ -4,54 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f8ecdc"
     tools:context=".ui.MainActivity">
 
     <LinearLayout
         android:id="@+id/linear_menu"
         android:layout_width="match_parent"
-        android:background="@color/purple"
         android:layout_height="wrap_content"
+        android:background="@color/pink"
         android:paddingStart="8dp"
-        android:paddingEnd="8dp"
         android:paddingTop="16dp"
+        android:paddingEnd="8dp"
         android:paddingBottom="16dp">
 
         <ImageView
-            android:id="@+id/image_all"
+            android:id="@+id/image_fortification"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:src="@drawable/all" />
+            android:src="@drawable/fortification"/>
 
         <ImageView
-            android:id="@+id/image_happy"
+            android:id="@+id/image_gratitude"
             android:layout_width="0dp"
             android:layout_height="40dp"
-            android:layout_toEndOf="@+id/image_allInclusive"
             android:layout_weight="1"
-            android:src="@drawable/happy" />
+            android:src="@drawable/gratitude" />
 
         <ImageView
-            android:id="@+id/image_sunny"
+            android:id="@+id/image_wisdom"
             android:layout_width="0dp"
             android:layout_height="40dp"
-            android:layout_toEndOf="@+id/image_emoji"
             android:layout_weight="1"
-            android:src="@drawable/sunny" />
+            android:src="@drawable/wisdom"/>
 
     </LinearLayout>
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.2"
+        android:src="@drawable/imagebackground" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:textColor="@color/black"
         android:id="@+id/text_user_name"
-        android:textSize="18sp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/cabin"
         android:layout_below="@id/linear_menu"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp"
-        android:text="Olá, Guilherme!" />
+        android:fontFamily="@font/cabin"
+        android:text="@string/helloName"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+    <TextView
+        android:id="@+id/text_choosetype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/VerseTypeFortification"
+        android:layout_below="@id/text_user_name"
+        android:textSize="18sp"
+        android:fontFamily="@font/cabin"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/text_phrase"
@@ -59,20 +75,20 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:fontFamily="@font/cabin"
-        android:textSize="22sp"
         android:gravity="center"
         android:padding="16dp"
+        android:text="@string/app_name"
         android:textColor="@color/black"
-        android:text="@string/app_name" />
+        android:textSize="22sp" />
 
     <View
         android:layout_width="128dp"
         android:layout_height="3dp"
         android:layout_below="@+id/text_phrase"
-        android:elevation="5dp"
-        android:backgroundTint="@color/dark_purple"
         android:layout_centerHorizontal="true"
-        android:background="@color/black" />
+        android:background="@color/black"
+        android:backgroundTint="@color/dark_purple"
+        android:elevation="5dp" />
 
     <Button
         android:id="@+id/button_new_phrase"
@@ -81,7 +97,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp"
-        android:backgroundTint="@color/dark_purple"
+        android:backgroundTint="@color/pink"
         android:fontFamily="@font/cabin"
-        android:text="@string/new_phrase" />
+        android:text="@string/new_verse" />
 </RelativeLayout>

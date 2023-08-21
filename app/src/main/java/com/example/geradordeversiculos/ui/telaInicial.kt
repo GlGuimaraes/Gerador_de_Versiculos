@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import com.example.geradordeversiculos.infra.MotivationConstants
+import com.example.geradordeversiculos.infra.VerseConstants
 import com.example.geradordeversiculos.R
 import com.example.geradordeversiculos.infra.SecurityPreferences
 import com.example.geradordeversiculos.databinding.ActivityTelaInicialBinding
@@ -33,7 +33,7 @@ class telaInicial : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun verifyUserName(){
-        val name = SecurityPreferences(this).getString(MotivationConstants.KEY.USER_NAME)
+        val name = SecurityPreferences(this).getString(VerseConstants.KEY.USER_NAME)
         if(name != ""){
             startActivity(Intent(this, MainActivity:: class.java))
             finish()
@@ -47,7 +47,7 @@ class telaInicial : AppCompatActivity(), View.OnClickListener {
         val name = binding.editName.text.toString()
         if (name != "") {
 
-            SecurityPreferences(this).storesTRING(MotivationConstants.KEY.USER_NAME,name)
+            SecurityPreferences(this).storesTRING(VerseConstants.KEY.USER_NAME,name)
 
             startActivity(Intent(this, MainActivity:: class.java))
             finish()
