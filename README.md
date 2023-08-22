@@ -1,13 +1,19 @@
-# Motivational
-Fico feliz em compartilhar um novo aplicativo que desenvolvi com os conhecimentos no curso Desenvolvimento de Aplicativos Android usando Kotlin do professor #GabrielFerrari
-Este Aplicativo gera frases motivacionais, podendo ser filtrados por ALL (todo tipo), HAPPY que gerará frases motivacionais do grupo HAPPY e SUNNY que gerará frases do tipo SUNNY
-Primeiro o usuário precisará digitar o seu Nome para que fique no topo do aplicativo, utilizei o #sharedPreference para salvar o nome do usuário em Key e mostrar na próxima activity
-Também criei uma função para verificar caso o usuário já tenha entrado com seu nome o aplicativo irá salvar e o usuário sempre que abrir o aplicativo, ele será redirecionado para o app com o nome salvo
-Desenvolvi também #Constantes para melhorar a leitura do código e evitar erros de digitação
-Desenvolvi este aplicativo utilizando a IDE #AndroidStudio junto com a linguagem #Kotlin
+# Gerador de versículo
 
-![image](https://github.com/GlGuimaraes/Motivational/assets/116769796/21d663fe-95b1-4d23-8243-9a792bea9518)
-![image](https://github.com/GlGuimaraes/Motivational/assets/116769796/eef4eaa7-0a24-47ff-a773-c58605f31ff8)
-![image](https://github.com/GlGuimaraes/Motivational/assets/116769796/f9f9fdd8-5517-4e96-a83f-beb538945b1e)
-![image](https://github.com/GlGuimaraes/Motivational/assets/116769796/fce5ff36-33ce-4104-bd08-3d82704bd2ee)
-![image](https://github.com/GlGuimaraes/Motivational/assets/116769796/d8cf2bca-f2fb-4162-8cbf-1dc91e41dbde)
+Fico feliz em compartilhar meu novo Aplicativo Android que desenvolvi com base no meu projeto anterior..
+
+Este aplicativo é um gerador de versículos, onde o usuário digita o seu nome apenas uma vez para entrar no Aplicativo, o aplicativo salva o nome do usuário e sempre que ele entrar já entrará na segunda Activity com seu nome salvo
+
+Onde nesta segunda Activity o aplicativo já gerará  seu primeiro versículo de Fortalecimento, o usuário pode gerar outros versículos de Fortalecimento clicando em "Novo versículo"
+
+Ou pode também escolher entre 2 outros tipos de versículos que até o momento tem, Gratidão e Sabedoria, onde também o usuário mudando o tipo e clicando em "Novo Versículo", gerará outros versículos do tipo que o usuário escolheu
+
+Até o momento tem apenas estes três tópicos, porém com o tempo pretendo colocar um scrollview e ir alimentando com mais tópicos na parte de cima do Aplicativo
+
+Já aproveito e deixo um versículo para vocês
+#### "Porque eu, o SENHOR, teu Deus, te tomo pela minha mão direita e te digo: Não temas, que eu te ajudo" Isaías 41:13
+![Tela inicial](https://github.com/GlGuimaraes/Gerador_de_Versiculos/assets/116769796/64eb44c6-7efe-4638-ade3-15db431ad639)
+![nome](https://github.com/GlGuimaraes/Gerador_de_Versiculos/assets/116769796/4fd2a30c-06db-48ed-8dd5-115aee034eb2)
+![Fortalecimento](https://github.com/GlGuimaraes/Gerador_de_Versiculos/assets/116769796/3f96bd10-6eca-49fb-950a-230865ffa480)
+![Gratidão](https://github.com/GlGuimaraes/Gerador_de_Versiculos/assets/116769796/8c1dba01-f682-4f1e-b784-e90e43430c3d)
+![Sabedoria](https://github.com/GlGuimaraes/Gerador_de_Versiculos/assets/116769796/2894d8c5-02f6-41ad-8ace-376463fc8f06)
