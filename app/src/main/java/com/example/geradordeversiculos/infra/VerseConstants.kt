@@ -9,6 +9,9 @@ class VerseConstants private constructor(){
     object FILTER{
         const val FORTIFICATION = 1
         const val GRATITUDE = 2
-        const val WISDOM = 3
+        const val HOPE = 3
+        const val WISDOM = 4
+        const val COURAGE = 5
+        const val HUMILITY = 6
     }
 }

@@ -9,12 +9,16 @@ class Mock {
 
     private val fortification = VerseConstants.FILTER.FORTIFICATION
     private val gratitude = VerseConstants.FILTER.GRATITUDE
+    private val hope = VerseConstants.FILTER.HOPE
     private val wisdom = VerseConstants.FILTER.WISDOM
+    private val courage = VerseConstants.FILTER.COURAGE
+    private val humility = VerseConstants.FILTER.HUMILITY
 
 
     val mListPhrase = listOf(
 
         Phrase("Posso todas as coisas naquele que me fortalece. Filipenses 4:13", fortification),
+        Phrase("Humildade", humility), // INSERIR VERSÍCULOS SOBRE HUMILDADE
         Phrase("Deus é o nosso refúgio e fortaleza, socorro bem presente na angústia. Salmos 46:1", fortification),
         Phrase("O Deus que me reveste de força e torna perfeito o meu caminho. Salmos 18:32", fortification),
         Phrase("Porque Deus não nos deu espírito de covardia, mas de poder, de amor e de moderação. 2 Timóteo 1:7", fortification),
@@ -72,7 +76,13 @@ class Mock {
         Phrase("Porque ao homem que lhe agrada, Deus dá sabedoria, e conhecimento, e alegria; mas ao pecador dá trabalho, para que ele ajunte e amontoe, a fim de dar ao que agrada a Deus. Também isso é vaidade e aflição de espírito. Eclesiastes 2:26", wisdom),
         Phrase("Dá, pois, ao teu servo um coração entendido para julgar a teu povo, para que prudentemente discirna entre o bem e o mal; porque quem poderia julgar a este teu tão grande povo? 1 Reis 3:9", wisdom),
         Phrase("O sábio é mais poderoso do que o forte, e o homem de conhecimento do que o que tem força. Provérbios 24:5", wisdom),
-        Phrase("Mas a sabedoria que vem do alto é, primeiramente, pura, depois, pacífica, moderada, tratável, cheia de misericórdia e de bons frutos, sem parcialidade, e sem hipocrisia. Tiago 3:17", wisdom)
+        Phrase("Mas a sabedoria que vem do alto é, primeiramente, pura, depois, pacífica, moderada, tratável, cheia de misericórdia e de bons frutos, sem parcialidade, e sem hipocrisia. Tiago 3:17", wisdom),
+
+        Phrase("Coragem", courage), // INSERIR VERSÍCULOS SOBRE CORAGEM
+
+        Phrase("Esperança",hope), // INSERIR VERSICULOS DE ESPERANÇA
+
+
     )
 
     fun getPhrase(value: Int): String{

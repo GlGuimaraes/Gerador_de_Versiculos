@@ -24,6 +24,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.imageFortification.setOnClickListener(this)
         binding.imageGratitude.setOnClickListener(this)
         binding.imageWisdom.setOnClickListener(this)
+        binding.imageHope.setOnClickListener(this)
+        binding.imageCourage.setOnClickListener(this)
+        binding.imageHumility.setOnClickListener(this)
 
 
         handdleUserName()
@@ -34,7 +37,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(view: View) {
         if (view.id == R.id.button_new_phrase) {
             handleNextPhrase()
-        } else if (view.id in listOf( R.id.image_fortification, R.id.image_gratitude, R.id.image_wisdom)){
+        } else if (view.id in listOf( R.id.image_fortification, R.id.image_gratitude, R.id.image_wisdom, R.id.image_hope
+        , R.id.image_courage, R.id.image_humility)){
             handleFilter(view.id)
         }
         if(view.id == R.id.image_fortification){
@@ -49,6 +53,19 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             binding.textChoosetype.text = "Aqui está um versículo de Sabedoria:"
             handleNextPhrase()
         }
+        if(view.id == R.id.image_hope){
+            binding.textChoosetype.text = "Aqui está um versículo de Esperança:"
+            handleNextPhrase()
+        }
+        if(view.id == R.id.image_courage){
+            binding.textChoosetype.text = "Aqui está um versículo de Coragem:"
+            handleNextPhrase()
+        }
+        if (view.id == R.id.image_humility){
+            binding.textChoosetype.text = "Aqui está um versículo de Humildade:"
+            handleNextPhrase()
+        }
+
     }
 
     private fun handleNextPhrase(){
@@ -59,7 +76,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         binding.imageFortification.setColorFilter(ContextCompat.getColor(this, R.color.black)) // 1
         binding.imageWisdom.setColorFilter(ContextCompat.getColor(this, R.color.black)) // 2
-        binding.imageGratitude.setColorFilter(ContextCompat.getColor(this, R.color.black)) // 3
+        binding.imageHope.setColorFilter(ContextCompat.getColor(this, R.color.black)) // 3
+        binding.imageGratitude.setColorFilter(ContextCompat.getColor(this, R.color.black)) // 4
+        binding.imageCourage.setColorFilter(ContextCompat.getColor(this, R.color.black)) // 5
+        binding.imageHumility.setColorFilter(ContextCompat.getColor(this, R.color.black)) // 6
+
 
         when (id) {
             R.id.image_fortification -> {
@@ -73,6 +94,18 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.image_wisdom -> {
                 binding.imageWisdom.setColorFilter(ContextCompat.getColor(this, R.color.white))
                 categoryID = VerseConstants.FILTER.WISDOM
+            }
+            R.id.image_hope -> {
+                binding.imageHope.setColorFilter(ContextCompat.getColor(this, R.color.white))
+                categoryID = VerseConstants.FILTER.HOPE
+            }
+            R.id.image_courage -> {
+                binding.imageCourage.setColorFilter(ContextCompat.getColor(this, R.color.white))
+                categoryID = VerseConstants.FILTER.COURAGE
+            }
+            R.id.image_humility -> {
+                binding.imageHumility.setColorFilter(ContextCompat.getColor(this, R.color.white))
+                categoryID = VerseConstants.FILTER.HUMILITY
             }
         }
     }
