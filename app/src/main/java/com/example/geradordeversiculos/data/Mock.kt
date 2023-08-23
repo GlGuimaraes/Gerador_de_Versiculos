@@ -18,7 +18,7 @@ class Mock {
         Phrase("Deus é o nosso refúgio e fortaleza, socorro bem presente na angústia. Salmos 46:1", fortification),
         Phrase("O Deus que me reveste de força e torna perfeito o meu caminho. Salmos 18:32", fortification),
         Phrase("Porque Deus não nos deu espírito de covardia, mas de poder, de amor e de moderação. 2 Timóteo 1:7", fortification),
-        Phrase("Não to mandei eu? Sê forte e corajoso; não temas, nem te espantes, porque o Senhor, teu Deus, é contigo por onde quer que andares. Josué 1:9", fortification),
+        Phrase("Não to mandei eu? Seja forte e corajoso! não temas, nem te espantes, porque o Senhor, teu Deus, é contigo por onde quer que andares. Josué 1:9", fortification),
         Phrase("Mas os que esperam no Senhor renovarão as suas forças, subirão com asas como águias, correrão e não se cansarão, caminharão e não se fatigarão. Isaías 40:31", fortification),
         Phrase("O Senhor é a minha força e o meu escudo; nele confiou o meu coração, e fui socorrido; pelo que o meu coração salta de prazer, e com o meu cântico o louvarei. Salmos 28:7" , fortification),
         Phrase("No demais, irmãos meus, fortalecei-vos no Senhor e na força do seu poder. Efésios 6:10", fortification),
@@ -73,7 +73,6 @@ class Mock {
         Phrase("Dá, pois, ao teu servo um coração entendido para julgar a teu povo, para que prudentemente discirna entre o bem e o mal; porque quem poderia julgar a este teu tão grande povo? 1 Reis 3:9", wisdom),
         Phrase("O sábio é mais poderoso do que o forte, e o homem de conhecimento do que o que tem força. Provérbios 24:5", wisdom),
         Phrase("Mas a sabedoria que vem do alto é, primeiramente, pura, depois, pacífica, moderada, tratável, cheia de misericórdia e de bons frutos, sem parcialidade, e sem hipocrisia. Tiago 3:17", wisdom)
-
     )
 
     fun getPhrase(value: Int): String{
