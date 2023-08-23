@@ -14,4 +14,10 @@ class VerseConstants private constructor(){
         const val COURAGE = 5
         const val HUMILITY = 6
     }
+
+    object LANGUEGE{
+        const val PORTUGUESE = "pt"
+        const val ENGLISH ="en"
+
+    }
 }

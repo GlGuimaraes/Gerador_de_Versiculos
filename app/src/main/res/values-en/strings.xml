@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Verse Generator</string>
+    <string name="new_phrase">NEW PHRASE</string>
+    <string name="your_name">What is your name?</string>
+    <string name="user">User</string>
+    <string name="phrase">Phrase</string>
+    <string name="save">To save</string>
+
+    <string name="validation_mandatory_name">Please provide your name.</string>
+    <string name="new_verse">New Verse</string>
+    <string name="VerseTypeFortification">Here is a verse of Strengthening:</string>
+    <string name="helloName">Hello, </string>
+    <string name="hope">hope</string>
+    <string name="fortification">Fortification</string>
+    <string name="gratitude">gratitude</string>
+    <string name="wisdom">wisdom</string>
+    <string name="courage">courage</string>
+    <string name="humility">humility</string>
+    <string name="imagebackground">imagebackground</string>
+
+    <string name="VerseTypeGratitute">Here is a verse of Gratitude:</string>
+    <string name="VerseTypeWisdom">Here is a Wisdom Verse:</string>
+    <string name="VerseTypeHope">Here is a verse of Hope:</string>
+    <string name="VerseTypeCourage">Here is a Courage Verse:</string>
+    <string name="VerseTypeHumility">Here is a verse of Humility:</string>
+
+
+</resources>

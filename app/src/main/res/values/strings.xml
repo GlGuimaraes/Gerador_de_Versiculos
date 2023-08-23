@@ -5,13 +5,24 @@
     <string name="user">Usuário</string>
     <string name="phrase">Frase</string>
     <string name="save">Salvar</string>
-    <string name="lets_begin">Vamos começar?</string>
-    <string name="phrases_all">Todas as frases</string>
-    <string name="phrases_motivation">Frases de motivação</string>
-    <string name="phrases_morning">Frases para manhã</string>
 
     <string name="validation_mandatory_name">Informe seu nome.</string>
     <string name="new_verse">Novo Versículo</string>
     <string name="VerseTypeFortification">Aqui está um versículo de Fortalecimento:</string>
-    <string name="helloName">Olá, Guilherme!</string>
+    <string name="helloName">Olá, </string>
+    <string name="hope">hope</string>
+    <string name="fortification">Fortification</string>
+    <string name="gratitude">gratitude</string>
+    <string name="wisdom">wisdom</string>
+    <string name="courage">courage</string>
+    <string name="humility">humility</string>
+    <string name="imagebackground">imagebackground</string>
+
+    <string name="VerseTypeGratitute">Aqui está um versículo de Gratidão:</string>
+    <string name="VerseTypeWisdom">Aqui está um versículo de Sabedoria:</string>
+    <string name="VerseTypeHope">Aqui está um versículo de Esperança:</string>
+    <string name="VerseTypeCourage">Aqui está um versículo de Coragem:</string>
+    <string name="VerseTypeHumility">Aqui está um versículo de Humildade:</string>
+
+
 </resources>

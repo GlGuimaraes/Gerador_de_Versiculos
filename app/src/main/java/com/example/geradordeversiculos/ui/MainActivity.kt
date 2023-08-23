@@ -9,6 +9,7 @@ import com.example.geradordeversiculos.R
 import com.example.geradordeversiculos.data.Mock
 import com.example.geradordeversiculos.infra.SecurityPreferences
 import com.example.geradordeversiculos.databinding.ActivityMainBinding
+import java.util.Locale
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -42,34 +43,34 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             handleFilter(view.id)
         }
         if(view.id == R.id.image_fortification){
-            binding.textChoosetype.text = "Aqui está um versículo de Fortalecimento:"
+            binding.textChoosetype.text = getString(R.string.VerseTypeFortification)
             handleNextPhrase()
         }
         if(view.id == R.id.image_gratitude){
-            binding.textChoosetype.text = "Aqui está um versículo de Gratidão:"
+            binding.textChoosetype.text = getString(R.string.VerseTypeGratitute)
             handleNextPhrase()
         }
         if(view.id == R.id.image_wisdom){
-            binding.textChoosetype.text = "Aqui está um versículo de Sabedoria:"
+            binding.textChoosetype.text = getString(R.string.VerseTypeWisdom)
             handleNextPhrase()
         }
         if(view.id == R.id.image_hope){
-            binding.textChoosetype.text = "Aqui está um versículo de Esperança:"
+            binding.textChoosetype.text = getString(R.string.VerseTypeHope)
             handleNextPhrase()
         }
         if(view.id == R.id.image_courage){
-            binding.textChoosetype.text = "Aqui está um versículo de Coragem:"
+            binding.textChoosetype.text = getString(R.string.VerseTypeCourage)
             handleNextPhrase()
         }
         if (view.id == R.id.image_humility){
-            binding.textChoosetype.text = "Aqui está um versículo de Humildade:"
+            binding.textChoosetype.text = getString(R.string.VerseTypeHumility)
             handleNextPhrase()
         }
 
     }
 
     private fun handleNextPhrase(){
-        binding.textPhrase.text = Mock().getPhrase(categoryID)
+        binding.textPhrase.text = Mock().getPhrase(categoryID, Locale.getDefault().language)
     }
 
     private fun handleFilter(id: Int){

@@ -8,56 +8,64 @@
     tools:context=".ui.MainActivity">
 
     <HorizontalScrollView
-        android:layout_width="wrap_content"
         android:id="@+id/linear_menu"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/pink"
-        android:orientation="horizontal"
-        android:paddingStart="8dp"
-        android:paddingTop="16dp"
-        android:paddingEnd="8dp"
-        android:paddingBottom="16dp">
 
-        <ImageView
-            android:id="@+id/image_fortification"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:src="@drawable/fortification"/>
-        <ImageView
-            android:id="@+id/image_hope"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:src="@drawable/esperanca"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/pink"
+            android:orientation="horizontal"
+            android:paddingStart="8dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="16dp">
 
-        <ImageView
-            android:id="@+id/image_gratitude"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:src="@drawable/gratitude" />
+            <ImageView
+                android:id="@+id/image_fortification"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:src="@drawable/fortification"
+                android:contentDescription="@string/fortification" />
 
-        <ImageView
-            android:id="@+id/image_wisdom"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:src="@drawable/wisdom"/>
+            <ImageView
+                android:id="@+id/image_hope"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:src="@drawable/esperanca"
+                android:contentDescription="@string/hope" />
 
-        <ImageView
-            android:id="@+id/image_courage"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:src="@drawable/courage"/>
+            <ImageView
+                android:id="@+id/image_gratitude"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:src="@drawable/gratitude"
+                android:contentDescription="@string/gratitude" />
 
-        <ImageView
-            android:id="@+id/image_humility"
-            android:layout_width="100dp"
-            android:layout_height="40dp"
-            android:src="@drawable/humility"/>
+            <ImageView
+                android:id="@+id/image_wisdom"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:src="@drawable/wisdom"
+                android:contentDescription="@string/wisdom" />
 
-    </LinearLayout>
+            <ImageView
+                android:id="@+id/image_courage"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:src="@drawable/courage"
+                android:contentDescription="@string/courage" />
+
+            <ImageView
+                android:id="@+id/image_humility"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:src="@drawable/humility"
+                android:contentDescription="@string/humility" />
+        </LinearLayout>
     </HorizontalScrollView>
+
 
     <ImageView
         android:layout_width="match_parent"
@@ -65,7 +73,8 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:alpha="0.2"
-        android:src="@drawable/imagebackground" />
+        android:src="@drawable/imagebackground"
+        android:contentDescription="@string/imagebackground" />
 
     <TextView
         android:id="@+id/text_user_name"
@@ -78,15 +87,16 @@
         android:text="@string/helloName"
         android:textColor="@color/black"
         android:textSize="22sp" />
+
     <TextView
         android:id="@+id/text_choosetype"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/VerseTypeFortification"
         android:layout_below="@id/text_user_name"
-        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
         android:fontFamily="@font/cabin"
-        android:layout_centerHorizontal="true"/>
+        android:text="@string/VerseTypeFortification"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/text_phrase"
