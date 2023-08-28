@@ -6,9 +6,9 @@ Este aplicativo é um gerador de versículos, onde o usuário digita o seu nome 
 
 Onde nesta segunda Activity o aplicativo já gerará  seu primeiro versículo de Fortalecimento, o usuário pode gerar outros versículos de Fortalecimento clicando em "Novo versículo"
 
-Ou pode também escolher entre 2 outros tipos de versículos que até o momento tem, Gratidão e Sabedoria, onde também o usuário mudando o tipo e clicando em "Novo Versículo", gerará outros versículos do tipo que o usuário escolheu
+Ou pode também escolher entre outros tipos de versículos Como, Gratidão, Sabedoria, Coragem enetr outros, onde também o usuário mudando o tipo e clicando em "Novo Versículo", gerará outros versículos do tipo que o usuário escolheu
 
-Até o momento tem apenas estes três tópicos, porém com o tempo pretendo colocar um scrollview e ir alimentando com mais tópicos na parte de cima do Aplicativo
+Inseri uma ScrollView que possibilitará eu inserir infinitos tópicos de versículos
 
 Já aproveito e deixo um versículo para vocês
 #### "Porque eu, o SENHOR, teu Deus, te tomo pela minha mão direita e te digo: Não temas, que eu te ajudo" Isaías 41:13
